@@ -1,0 +1,12 @@
+addiu $1, $0, 1
+syscall
+addu $2 $2 $1
+addiu $1, $0, 2
+syscall
+divu $2 $1
+mfhi $9
+addi $3 $0 1
+open $3
+rsw $9 $9
+close
+beq $0, $0, -12

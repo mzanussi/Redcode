@@ -1,0 +1,9 @@
+addiu $1, $0, 1
+syscall
+addu $2 $2 $1
+addiu $1, $0, 2
+syscall
+divu $2 $1
+mfhi $9
+sw $9, 0($9)
+beq $0, $0, -9

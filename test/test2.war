@@ -1,0 +1,45 @@
+aDd $1, $2, $3
+aDdI $1, $2, 100
+addiu $3, $3, 1
+ADdU $1 $2 $3
+and $1, $2, $3
+andi $1, $2, 100
+beq $1, $2, 100
+bgez $1, 100
+bgtz $1, 100
+blez $1, 100
+bltz $1, 100
+bne $1, $2, 100
+close
+DIVU $1, $2
+frk $1
+hlt
+j 666
+jr $31
+lw $1, 100($2)
+mfhi $31
+mflo $31
+mfpc $30
+mult $1, $2
+nor 				$3		$2		$1
+open $31
+oR 				$3,$2,$1
+ori $1, $2, 100
+rfrk $25
+rsw $1, $2
+sll $1, $2, 10
+sllv $1, $2, $3
+slti $1, $2, 100
+sltiu $1, $2, 100
+slt $1, $2, $3
+sltu $1, $2, $3
+sra $1, $2, 10
+srl $1, $2, 10
+srav $1, $2, $3
+sRlv $1, $2, $3
+sub $1, $2, $3
+subu $1, $2, $3
+sw $1, 100($2)
+syscall
+xor $1, $2, $3
+xori $1, $2, 100

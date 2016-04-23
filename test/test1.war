@@ -1,0 +1,30 @@
+ori $1 $0 65535
+andi $2 $1 10
+or $3 $1 $2
+and $4 $1 $2
+divu $1 $2
+addiu $5 $0 13
+add $4 $5 $0
+addi  	$5, $5, -100
+and $1 $5 $4
+
+j 1
+j 0
+j -1
+j -65535
+sra $1, $2, 10
+srl $1, $2, 10
+addi $3, $3, 0
+addiu $3, $3, 0
+aDd $1, $2, $3
+beq $0, $0, 1
+j 10
+j 232323
+
+syscall
+hlt
+frk $1
+open $31
+close
+rfrk $25
+rsw $1, $2

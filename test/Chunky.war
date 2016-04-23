@@ -1,0 +1,25 @@
+mfpc $14
+addiu $15, $14, 18
+
+addiu $12, $12, 1
+
+addiu $1, $0, 1
+syscall
+addu $2 $2 $1
+addiu $1, $0, 2
+syscall
+divu $2 $1
+mfhi $9
+frk $9
+
+bne $0, $13, 4
+
+addiu $13, $0, 1
+sub $24, $14, $12
+sw $0, 0($24)
+beq $0 $0 -5
+
+addiu $13, $0, 0
+add $24, $15, $12
+sw $0, 0($24)
+beq $0 $0 -18

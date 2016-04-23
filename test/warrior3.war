@@ -1,0 +1,3 @@
+addiu $1, $0, 1
+syscall
+frk $1
